@@ -86,6 +86,9 @@ Robot.prototype.exitMaze = function(steps) {
 			if(this.x === this.maze.endX && this.y === this.maze.endY) {
 				return true;
 			}
+			setTimeout(function() { 
+				// differs for 1 second before continuing with the loop.
+			}, 1000);
 		}
 		return false;
 	}
